@@ -241,7 +241,6 @@ export const getBlogComment = async (req, res) => {
   } catch (error) {
     res.json({
       success: false,
-      message: error.message,
     });
   }
 };

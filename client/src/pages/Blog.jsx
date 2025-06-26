@@ -64,10 +64,10 @@ const Blog = () => {
       if (data.success) {
         setComments(data.comments || []);
       } else {
-        toast.error(data.message);
+        console.error("Failed to fetch comments:", data.message);
       }
     } catch (error) {
-      toast.error(error.message);
+      console.error("Error fetching comments:", error);
     }
   };
 
